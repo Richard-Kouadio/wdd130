@@ -1,0 +1,4 @@
+main {
+  max-width: 840px;  /* Limits the width */
+  margin: 0 auto;    /* Centers the content */
+}
