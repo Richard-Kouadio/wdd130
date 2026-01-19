@@ -1,23 +1,44 @@
-main {
-  max-width: 840px;  /* Limits the width */
-  margin: 0 auto;    /* Centers the content */
+nav {
+  background-color: #333;
+  padding: 1rem;
 }
-
+nav a {
+  color: white;
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+}
+main {
+  max-width: 840px;
+  margin: 0 auto;
+}
+h1 {
+  color: #333;
+}
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid #000;
+  padding: 2px;
+  box-shadow: 0 0 10px #777;
+}
 aside {
-  width: 20rem;          /* Set the width */
-  margin: 1rem;          /* Add margin */
-  border: 1px solid rgb(0 0 0 / 0.2);  /* Add a border with some transparency */
-  padding: 1rem;         /* Add some padding */
-  background-color: #eee; /* Light gray background */
-  color: #333;           /* Dark text color */
-  text-align: center;    /* Center the text */
+  width: 300px;
+  margin: 1rem;
+  border: 1px solid #999;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
 }
 aside img {
-  width: 200px;  /* Set the width */
-  height: auto;  /* Automatically adjust the height to maintain the aspect ratio */
+  width: 200px;
+  height: auto;
+}
+p {
+  padding: 0;
 }
 footer {
-  margin-top: 15px;      /* Add space above the footer */
-  border-top: 1px solid #000;  /* Add a top border */
-  text-align: center;    /* Center the footer text */
+  margin-top: 1rem;
+  border-top: 1px solid #000;
+  text-align: center;
 }
