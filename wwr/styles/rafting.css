@@ -1,108 +1,74 @@
-/* Define CSS variables for colors and fonts */
+/* ======================================
+   CSS VARIABLES
+====================================== */
 :root {
-  --primary-color: #055a05; /* Forest green */
-  --secondary-color: #f4a261; /* Warm sand */
-  --accent1-color: #264653; /* Dark slate blue */
-  --accent2-color: #e9c46a; /* Light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
+  --primary-color: #055a05;      /* Forest green */
+  --secondary-color: #f4a261;    /* Warm sand */
+  --accent1-color: #264653;      /* Dark slate blue */
+  --accent2-color: #e9c46a;      /* Light golden yellow */
+  --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal selector to reset box-model properties */
+/* ======================================
+   RESET
+====================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* ======================================
+   BODY
+====================================== */
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color); /* Text color */
-  background-color: #f9f9f9; /* Light background */
+  color: var(--accent1-color);
+  background-color: #f9f9f9;
 }
 
-/* Header Styling */
+/* ======================================
+   PAGE WIDTH
+====================================== */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* ======================================
+   HEADER & NAVIGATION
+====================================== */
 header {
   background-color: var(--primary-color);
-  color: var(--accent2-color); /* Light text color */
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 0;
 }
 
-/* Navigation Bar Styling */
 nav {
   margin-top: 10px;
 }
 
 nav a {
-  color: var(--accent2-color); /* Text color for links */
+  color: var(--accent2-color);
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.1em;
 }
 
 nav a:hover {
-  text-decoration: underline; /* Underline links when hovered */
+  text-decoration: underline;
 }
 
-/* Main Content Area Styling */
-main {
-  width: 80%;
-  max-width: 840px;
-  margin: 20px auto;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block; /* Ensure image takes up the full width */
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  color: white;
-  background-color: var(--accent1-color); /* Dark blue background */
-  opacity: 0.7;
-}
-
-/* Article Section Styling */
-article {
-  margin-top: 20px;
-}
-
-article img {
-  float: right;
-  width: 150px;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
-article p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Section Styling for History and Adventure */
-section {
-  margin: 20px 0;
-}
-
+/* ======================================
+   HEADINGS & TEXT
+====================================== */
+h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin-bottom: 10px;
 }
 
 p {
@@ -110,10 +76,68 @@ p {
   line-height: 1.6;
 }
 
-/* Footer Section Styling */
+/* ======================================
+   HERO SECTION
+====================================== */
+.hero {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero heading overlay */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+/* Hero article overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  color: #ffffff;
+}
+
+/* Hero article image */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 5px;
+}
+
+/* ======================================
+   SECTIONS
+====================================== */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
 footer {
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 15px 0;
 }
@@ -122,6 +146,7 @@ footer p {
   font-size: 1.1em;
 }
 
+/* Social media icons */
 .socialmedia {
   margin-top: 10px;
 }
@@ -134,50 +159,4 @@ footer p {
 .socialmedia img {
   width: 30px;
   height: 30px;
-}
-
-/* Remove underlines from links in footer */
-.socialmedia a {
-  text-decoration: none;
-}
-/* Hero Section Styling */
-.hero {
-  position: relative; /* Make the div a positioning context for the child elements */
-}
-
-.hero img {
-  display: block; /* Makes the image behave as a block element */
-  width: 100%; /* Ensures the image takes up the entire width of the container */
-  height: auto; /* Maintain the image's aspect ratio */
-}
-
-/* Heading Styling inside the Hero Section */
-.hero h1 {
-  position: absolute; /* Position the heading over the image */
-  top: 20px; /* Space from the top of the hero div */
-  width: 100%; /* Make the heading take up the full width */
-  padding: 16px; /* Padding around the heading text */
-  text-align: center; /* Center align the text */
-  opacity: 0.7; /* Make the background slightly transparent */
-  background-color: var(--accent1-color); /* Use your accent color for the background */
-  color: #fff; /* White text */
-}
-
-/* Article Styling inside the Hero Section */
-.hero article {
-  position: absolute; /* Position the article over the image */
-  bottom: 20px; /* Position the article near the bottom of the hero section */
-  left: 20px; /* Space from the left side */
-  width: 300px; /* Limit the width of the article */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 16px;
-  color: white;
-}
-
-/* Image inside the Article */
-.hero article img {
-  float: right; /* Float the image to the right */
-  width: 125px; /* Set a fixed width for the image */
-  margin-left: 16px; /* Add space between the image and text */
-  border-radius: 5px; /* Optional: rounded corners for the image */
 }
