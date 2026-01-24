@@ -1,11 +1,17 @@
 /* ======================================
    CSS VARIABLES
 ====================================== */
+/* Define CSS variables in :root */
 :root {
-  --primary-color: #055a05;      /* Forest green */
-  --secondary-color: #f4a261;    /* Warm sand */
-  --accent1-color: #264653;      /* Dark slate blue */
-  --accent2-color: #e9c46a;      /* Light golden yellow */
+  /* Primary and secondary colors */
+  --primary-color: #055a05;
+  /* Forest green */
+  --accent1-color: #264653;
+  /* Dark slate blue */
+  --accent2-color: #e9c46a;
+  /* Light golden yellow */
+
+  /* Fonts for headings and body */
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
