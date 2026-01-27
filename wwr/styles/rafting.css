@@ -1,7 +1,6 @@
-/* ======================================
-   CSS VARIABLES
-====================================== */
-/* Define CSS variables in :root */
+/* =======================================
+   Define CSS Variables in :root
+======================================= */
 :root {
   /* Primary and secondary colors */
   --primary-color: #055a05;
@@ -16,27 +15,27 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ======================================
-   RESET
-====================================== */
+/* =======================================
+   RESET: Remove default styles for all elements
+======================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ======================================
-   BODY
-====================================== */
+/* =======================================
+   BODY: General styles for body
+======================================= */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #f9f9f9;
 }
 
-/* ======================================
-   PAGE WIDTH
-====================================== */
+/* =======================================
+   PAGE WIDTH: Set max width for main content
+======================================= */
 header,
 main,
 footer {
@@ -44,42 +43,30 @@ footer {
   margin: 0 auto;
 }
 
-/* ======================================
-   HEADER & NAVIGATION
-====================================== */
+/* =======================================
+   HEADER: Grid layout for header
+======================================= */
 header {
   background-color: var(--primary-color);
-  text-align: center;
-  padding: 20px 0;
-}
-
-header {
   display: grid;
   grid-template-columns: 200px 1fr;
   align-items: center;
   padding: 1rem;
-  background-color: steelblue;
+  text-align: center;
 }
 
-nav {
-  margin-top: 10px;
+header img {
+  width: 100%;
 }
 
-nav a {
-  color: var(--accent2-color);
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
+/* =======================================
+   NAVIGATION: Flex layout for nav bar
+======================================= */
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 10px;
 }
 
 nav a {
@@ -89,9 +76,13 @@ nav a {
   color: white;
 }
 
-/* ======================================
-   HEADINGS & TEXT
-====================================== */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =======================================
+   HEADINGS & TEXT: General text styles
+======================================= */
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -103,9 +94,9 @@ p {
   line-height: 1.6;
 }
 
-/* ======================================
-   HERO SECTION
-====================================== */
+/* =======================================
+   HERO SECTION: Styles for hero area
+======================================= */
 .hero {
   position: relative;
   margin-bottom: 20px;
@@ -117,7 +108,6 @@ p {
   height: auto;
 }
 
-/* Hero heading overlay */
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -129,7 +119,6 @@ p {
   opacity: 0.7;
 }
 
-/* Hero article overlay */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -140,86 +129,33 @@ p {
   color: #ffffff;
 }
 
-/* Hero article image */
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 16px;
   border-radius: 5px;
-
-  /* ================================
-     HISTORY SECTION (CSS GRID)
-  ================================ */
-
-  .history {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 1rem;
-    align-items: center;
-    margin: 2rem 0;
-    padding: 1rem;
-  }
-
-  .history img {
-    max-width: 100%;
-  }
-
-  /* ================================
-     ADVENTURES SECTION (CSS FLEX)
-  ================================ */
-
-  .adventures {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .adventures figure {
-    text-align: center;
-  }
-
-  .adventures img {
-    max-width: 100%;
-  }
 }
 
-/* ======================================
-   SECTIONS
-====================================== */
-section {
-  margin: 20px 0;
+/* =======================================
+   HISTORY SECTION: Grid layout for history
+======================================= */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1rem;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
 }
 
-section h2 {
-  margin-bottom: 10px;
+.history img {
+  max-width: 100%;
 }
 
-/* ======================================
-   FOOTER
-====================================== */
-footer {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-align: center;
-  padding: 15px 0;
-}
-
-footer p {
-  font-size: 1.1em;
-}
-
-/* Social media icons */
-.socialmedia {
-  margin-top: 10px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: 30px;
-}
+/* =======================================
+   ADVENTURES SECTION: Flex layout for adventure images
+======================================= */
+.adventures {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
