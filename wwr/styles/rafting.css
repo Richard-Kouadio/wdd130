@@ -1,8 +1,7 @@
 /* =======================================
-   Define CSS Variables in :root
+   CSS VARIABLES
 ======================================= */
 :root {
-  /* Primary and secondary colors */
   --primary-color: #055a05;
   /* Forest green */
   --accent1-color: #264653;
@@ -10,13 +9,12 @@
   --accent2-color: #e9c46a;
   /* Light golden yellow */
 
-  /* Fonts for headings and body */
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
 /* =======================================
-   RESET: Remove default styles for all elements
+   RESET
 ======================================= */
 * {
   margin: 0;
@@ -25,7 +23,7 @@
 }
 
 /* =======================================
-   BODY: General styles for body
+   BODY
 ======================================= */
 body {
   font-family: var(--body-font);
@@ -34,7 +32,7 @@ body {
 }
 
 /* =======================================
-   PAGE WIDTH: Set max width for main content
+   PAGE WIDTH
 ======================================= */
 header,
 main,
@@ -44,7 +42,7 @@ footer {
 }
 
 /* =======================================
-   HEADER: Grid layout for header
+   HEADER
 ======================================= */
 header {
   background-color: var(--primary-color);
@@ -52,7 +50,6 @@ header {
   grid-template-columns: 200px 1fr;
   align-items: center;
   padding: 1rem;
-  text-align: center;
 }
 
 header img {
@@ -60,20 +57,19 @@ header img {
 }
 
 /* =======================================
-   NAVIGATION: Flex layout for nav bar
+   NAVIGATION
 ======================================= */
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10px;
 }
 
 nav a {
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-weight: bold;
-  color: white;
+  color: var(--accent2-color);
 }
 
 nav a:hover {
@@ -81,7 +77,7 @@ nav a:hover {
 }
 
 /* =======================================
-   HEADINGS & TEXT: General text styles
+   HEADINGS & TEXT
 ======================================= */
 h1,
 h2 {
@@ -95,7 +91,7 @@ p {
 }
 
 /* =======================================
-   HERO SECTION: Styles for hero area
+   HERO SECTION
 ======================================= */
 .hero {
   position: relative;
@@ -112,11 +108,11 @@ p {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
   background-color: var(--accent1-color);
   color: #ffffff;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .hero article {
@@ -125,19 +121,19 @@ p {
   left: 20px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 16px;
+  padding: 1rem;
   color: #ffffff;
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  margin-left: 16px;
+  margin-left: 1rem;
   border-radius: 5px;
 }
 
 /* =======================================
-   HISTORY SECTION: Grid layout for history
+   HISTORY SECTION
 ======================================= */
 .history {
   display: grid;
@@ -153,9 +149,61 @@ p {
 }
 
 /* =======================================
-   ADVENTURES SECTION: Flex layout for adventure images
+   ADVENTURES SECTION
 ======================================= */
 .adventures {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  padding: 1rem;
+}
+
+.adventures figure {
+  text-align: center;
+}
+
+.adventures img {
+  max-width: 100%;
+}
+
+/* =======================================
+   SECTIONS
+======================================= */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+
+/* =======================================
+   SOCIAL MEDIA
+======================================= */
+.socialmedia {
+  margin-top: 10px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+}
