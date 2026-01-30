@@ -183,27 +183,37 @@ section h2 {
 footer {
   background-color: var(--primary-color);
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  /* Changed to flex for layout */
+  justify-content: space-between;
+  /* Space between text and social media */
+  align-items: center;
+  /* Vertically center items */
   padding: 1rem;
 }
 
 footer p {
   font-size: 1.1em;
+  margin: 0;
+  /* Remove default margin */
 }
 
 /* =======================================
    SOCIAL MEDIA
 ======================================= */
 .socialmedia {
-  margin-top: 10px;
+  display: flex;
+  /* Use flex to line icons horizontally */
+  gap: 1rem;
+  /* Space between icons */
 }
 
 .socialmedia a {
   text-decoration: none;
-  margin: 0 10px;
 }
 
 .socialmedia img {
   width: 30px;
   height: 30px;
+  display: block;
 }
