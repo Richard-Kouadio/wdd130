@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Whitewater Rafting</title>
+  <title>Contact Us | Whitewater Rafting</title>
   <meta name="description"
-    content="Learn about our whitewater rafting adventures and company history.">
+    content="Contact Whitewater Rafting to ask questions, make reservations, or share feedback with our team.">
   <meta name="author" content="Kouame Richard">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -23,90 +23,79 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <div class="hero">
-      <img src="images/hero-image.jpg" alt="Whitewater rafting adventure">
-      <h1>Whitewater Rafting Adventures</h1>
-      <article>
-        <h2>Meet Our Team</h2>
-        <img src="images/team.jpg" alt="Our rafting team">
-        <p>
-          Our team is dedicated to delivering unforgettable whitewater rafting experiences while
-          prioritizing safety, excitement, and adventure.
-        </p>
-      </article>
-    </div> <!-- .hero -->
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+      <h1>Contact Us</h1>
 
-    <!-- HISTORY -->
-    <section class="history">
-      <h2>History</h2>
-      <p>
-        Whitewater Rafting has been guiding river adventures for over 20 years. Our passion for the
-        outdoors and commitment to safety have helped us create lifelong memories for thousands of
-        guests.
-      </p>
-      <p>
-        Founded by a group of avid rafters and nature enthusiasts, our company began as a small
-        local
-        business with a vision to share the thrill of the rapids with others. Over the years, we
-        have expanded to offer trips across some of the most scenic and challenging rivers in the
-        country.
-      </p>
-      <p>
-        Throughout our journey, safety and environmental stewardship have been our top priorities.
-        We work closely with local communities to preserve the natural beauty and promote
-        responsible
-        adventure tourism. Our experienced guides are passionate about sharing their knowledge and
-        ensuring every trip is both exciting and safe.
-      </p>
-      <img src="images/history.jpg" alt="Rafting company history">
+      <p><strong>Address:</strong> 123 River Road, Boise, ID 83702</p>
+      <p><strong>Phone:</strong> (208) 555-RAFT</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.428898540735!2d-116.203451!3d43.615018"
+        width="300" height="200" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
 
-    <!-- ADVENTURES -->
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <p>
-        Our rafting trips cater to all skill levels, from beginners looking for a gentle float to
-        adrenaline seekers ready to conquer wild rapids. Each adventure offers unique landscapes,
-        challenging courses, and unforgettable memories.
-      </p>
-      <p>
-        Whether you have just a few hours or a full day, our diverse offerings provide something for
-        everyone. Join us for a half-day excursion perfect for families or tackle our full-day
-        adventures that test your paddling skills and endurance.
-      </p>
-      <p>
-        Every trip is led by certified guides who prioritize your safety while sharing exciting
-        stories about the rivers, wildlife, and geology of the region. Prepare for splashes, laughs,
-        and breathtaking views around every bend!
-      </p>
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of Message</legend>
+
+          <label>
+            <input type="radio" name="purpose" value="general" required>
+            General Inquiry
+          </label>
+
+          <label>
+            <input type="radio" name="purpose" value="reservation">
+            Reservation Question
+          </label>
+
+          <label>
+            <input type="radio" name="purpose" value="website">
+            Website Suggestion
+          </label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- EMPLOYEES -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
 
       <figure>
-        <img src="images/los-dientes-del-diablo.jpg" alt="Los Dientes del Diablo">
-        <figcaption>Los Dientes del Diablo - Known for its thrilling rapids and stunning canyon
-          views.</figcaption>
+        <img src="images/employee1.jpg" alt="John, lead river guide">
+        <figcaption>John – Lead River Guide</figcaption>
       </figure>
 
       <figure>
-        <img src="images/big-mallard.jpg" alt="Big Mallard">
-        <figcaption>Big Mallard - A challenging course favored by experienced rafters.</figcaption>
+        <img src="images/employee2.jpg" alt="Sarah, customer support specialist">
+        <figcaption>Sarah – Customer Support</figcaption>
       </figure>
 
       <figure>
-        <img src="images/half-day-adventure.jpg" alt="Half Day Adventure">
-        <figcaption>Half Day Adventure - Ideal for beginners and families, a scenic and relaxing
-          trip.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/thunder-rapids.jpg" alt="Thunder Rapids">
-        <figcaption>Thunder Rapids - Heart-pounding action through rapid-filled waters.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/river-canyon.jpg" alt="River Canyon Adventure">
-        <figcaption>River Canyon Adventure - Explore beautiful canyons and serene river stretches.
-        </figcaption>
+        <img src="images/employee3.jpg" alt="Mike, safety coordinator">
+        <figcaption>Mike – Safety Coordinator</figcaption>
       </figure>
     </section>
   </main>
