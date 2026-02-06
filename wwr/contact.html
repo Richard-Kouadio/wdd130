@@ -33,8 +33,8 @@
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31786.17830324763!2d-3.7677529568492774!3d5.219852214496372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1f808ca98fad9%3A0x361353be4879393c!2sGrand-Bassam!5e0!3m2!1sfr!2sci!4v1770401673346!5m2!1sfr!2sci"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="600" height="450" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
 
@@ -52,29 +52,21 @@
         <fieldset>
           <legend>Purpose of Message</legend>
 
-          <label>
-            <input type="radio" name="purpose" value="general" required>
-            General Inquiry
-          </label>
+          <input type="radio" id="general" name="purpose" value="general" required>
+          <label for="general">General Inquiry</label>
 
-          <label>
-            <input type="radio" name="purpose" value="reservation">
-            Reservation Question
-          </label>
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation">Reservation Question</label>
 
-          <label>
-            <input type="radio" name="purpose" value="website">
-            Website Suggestion
-          </label>
+          <input type="radio" id="website" name="purpose" value="website">
+          <label for="website">Website Suggestion</label>
         </fieldset>
 
         <label for="message">Message</label>
         <textarea id="message" name="message"></textarea>
 
-        <label>
-          <input type="checkbox" name="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
         <button type="submit">Send Message</button>
       </form>
