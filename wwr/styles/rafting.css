@@ -46,6 +46,8 @@ footer {
 ======================================= */
 header {
   background-color: var(--primary-color);
+  color: #ffffff;
+  /* FIXES contrast issue */
   display: grid;
   grid-template-columns: 200px 1fr;
   align-items: center;
