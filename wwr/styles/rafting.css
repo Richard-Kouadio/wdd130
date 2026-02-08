@@ -243,19 +243,28 @@ footer p {
 
 .contact-form form {
   display: grid;
-  gap: 0.75rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-form label {
   font-weight: bold;
+  text-align: right;
+  padding-right: 0.5rem;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
+  width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 100%;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+  resize: vertical;
 }
 
 .contact-form textarea {
@@ -263,8 +272,10 @@ footer p {
 }
 
 .contact-form fieldset {
+  grid-column: 2;
   border: 1px solid var(--accent1-color);
-  padding: 0.75rem;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 .contact-form legend {
@@ -272,17 +283,34 @@ footer p {
   padding: 0 0.5rem;
 }
 
-.contact-form button {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
+.contact-form fieldset label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 
-.contact-form button:hover {
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.contact-form button {
+  grid-column: 2;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
   background-color: #044a04;
+  outline: none;
 }
 
 /* Employee section */
